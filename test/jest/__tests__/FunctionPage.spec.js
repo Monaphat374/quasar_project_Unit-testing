@@ -43,25 +43,11 @@ test('trigger click event on button ', async () => {
   const button = wrapper.find('button')
   await button.trigger('click')
   expect(wrapper.vm.addition(1,2)).toBe(3)
-})
-
-test('trigger click event on button ', async () => {
-  const wrapper = shallowMount(FunctionPage)
-  const button = wrapper.find('button')
-  await button.trigger('click')
   expect(wrapper.vm.subtraction(5,4)).toBe(1)
-})
-
-test('trigger click event on button ', async () => {
-  const wrapper = shallowMount(FunctionPage)
-  const button = wrapper.find('button')
-  await button.trigger('click')
   expect(wrapper.vm.multiplication(5,2)).toBe(10)
+  expect(wrapper.vm.divide(15,5)).toBe(3)
 })
 
-test('trigger click event on button ', async () => {
-  const wrapper = shallowMount(FunctionPage)
-  const button = wrapper.find('button')
-  await button.trigger('click')
-  expect(wrapper.vm.divide(15,5)).toBe(5)
-})
+
+
+

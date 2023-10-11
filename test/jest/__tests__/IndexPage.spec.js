@@ -9,24 +9,18 @@ describe('IndexPage', () => {
     expect(header.text())
       .toBe('มนภัทร มั่นคง')
   })
+})
 
-  it('check text content to be as defined in variable', () => {
-    const wrapper = shallowMount(IndexPage, {
-      data () {
-        return {
-          title: 'I love Vue.'
-        }
+it('check text content to be as defined in variable', () => {
+  const wrapper = shallowMount((IndexPage), {
+    data () {
+      return {
+        title: 'I love Vue.'
       }
-    })
-    let header = wrapper.find('.htmlClass h1')
-    expect(header.text()).toBe('I love Vue.')
+    }
   })
-
-
-
-
-
-
+  let header = wrapper.find('.htmlClass h1')
+  expect(header.text()).toBe('I love Vue.')
 })
 
 

@@ -9,7 +9,7 @@
 
 <script>
 import InputPage from 'src/pages/InputPage.vue'
-import FunctionPage from './FunctionPage.vue';
+import FunctionPage from 'src/pages/FunctionPage.vue';
 export default {
   name: 'HtmlComponent',
   components:{
